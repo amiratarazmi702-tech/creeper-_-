@@ -10,6 +10,7 @@ header {
     text-align: center;
     padding: 30px;
     background: #1b1b1b;
+    border-bottom: 4px solid #ffd000;
 }
 
 
@@ -19,7 +20,8 @@ header {
 
 
 h1 {
-    color: #4cff00;
+    color: #ffd000;
+    text-shadow: 0 0 10px #ffd000;
 }
 
 
@@ -36,16 +38,25 @@ h1 {
     margin: 5px;
     border-radius: 10px;
     display: inline-block;
+    border: 2px solid #ffd000;
+}
+
+
+.menu a:hover {
+    background: #ffd000;
+    color: black;
 }
 
 
 .admin-btn {
-    background: green !important;
+    background: #ffd000 !important;
+    color: black !important;
+    border: 3px solid #ff9900;
 }
 
 
 .admin-btn:hover {
-    background: darkgreen !important;
+    background: #ff9900 !important;
 }
 
 
@@ -67,6 +78,8 @@ section {
     padding: 20px;
     border-radius: 15px;
     text-align: center;
+    border: 3px solid #ffd000;
+    box-shadow: 0 0 10px #ffd000;
 }
 
 
@@ -79,9 +92,9 @@ section {
 
 
 button {
-    background: #4cff00;
+    background: #ffd000;
     color: black;
-    border: none;
+    border: 3px solid #ff9900;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -89,7 +102,7 @@ button {
 
 
 button:hover {
-    background: #32b000;
+    background: #ff9900;
 }
 
 
@@ -97,10 +110,12 @@ input, textarea {
     width: 80%;
     padding: 10px;
     border-radius: 8px;
+    border: 2px solid #ffd000;
 }
 
 
 footer {
     text-align: center;
     padding: 20px;
+    border-top: 3px solid #ffd000;
 }
