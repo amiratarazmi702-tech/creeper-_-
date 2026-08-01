@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>مودها | Creeper</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+
+<header>
+
+    <h1>
+        🧱 مودهای Creeper
+    </h1>
+
+    <a href="/">
+        🏠 برگشت به خانه
+    </a>
+
+</header>
+
+
+
+<section>
+
+<div class="cards">
+
+
+{% for mod in mods %}
+
+<div class="card">
+
+
+<img src="/static/images/{{ mod.image }}" width="200">
+
+
+<h2>
+{{ mod.name }}
+</h2>
+
+
+<p>
+{{ mod.description }}
+</p>
+
+
+<p>
+نسخه: {{ mod.version }}
+</p>
+
+
+<p>
+قیمت: {{ mod.price }}
+</p>
+
+
+
+{% if mod.price == "رایگان" %}
+
+<a href="/download/{{ mod.file }}">
+<button>
+⬇️ دانلود
+</button>
+</a>
+
+
+{% else %}
+
+<button>
+💰 خرید {{ mod.price }}
+</button>
+
+
+{% endif %}
+
+
+</div>
+
+
+{% endfor %}
+
+
+</div>
+
+</section>
+
+
+
+</body>
+
+</html>
